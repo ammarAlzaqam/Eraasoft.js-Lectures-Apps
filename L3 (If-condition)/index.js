@@ -105,20 +105,20 @@
 //* هل انت عندك دم - مخاصم
 //* هل انت بتحس يا عم - مخاصم
 {
-  let doCare = confirm("هل انت بتهتم؟");
-  if (doCare) {
-    let hasBlood = confirm("هل انت عندك دم؟");
-    if (hasBlood) {
-      let hasSense = confirm("هل انت بتحس يا عم");
-      if (hasSense) {
-        document.writeln("مصالح");
-      } else {
-        document.writeln("مخاصم");
-      }
-    } else {
-      document.writeln("مخاصم");
-    }
-  } else {
-    document.writeln("مخاصم");
-  }
+  // let doCare = confirm("هل انت بتهتم؟");
+  // if (doCare) {
+  //   let hasBlood = confirm("هل انت عندك دم؟");
+  //   if (hasBlood) {
+  //     let hasSense = confirm("هل انت بتحس يا عم");
+  //     if (hasSense) {
+  //       document.writeln("مصالح");
+  //     } else {
+  //       document.writeln("مخاصم");
+  //     }
+  //   } else {
+  //     document.writeln("مخاصم");
+  //   }
+  // } else {
+  //   document.writeln("مخاصم");
+  // }
 }
