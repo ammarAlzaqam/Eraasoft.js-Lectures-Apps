@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO>> Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- TODO FontAwesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="overlay d-flex align-items-center justify-content-center gap-3">
+        <button class="frutiger-button" onclick="showProducts()">
+            <div class="inner d-flex align-items-center gap-2">
+                <i class="fa-solid fa-eye"></i>
+                <span class="text">Show Products</span>
+                <div class="bottom-white"></div>
+            </div>
+        </button>
+        <button class="frutiger-button add" onclick="addNewProducts()">
+            <div class="inner d-flex align-items-center gap-2">
+                <i class="fa-solid fa-plus"></i>
+                <span class="text">Add New Product</span>
+            </div>
+        </button>
+        <button class="frutiger-button remove" onclick="removeProducts()">
+            <div class="inner d-flex align-items-center gap-2">
+                <i class="fa-solid fa-eraser"></i>
+                <span class="text">Remove Product</span>
+            </div>
+        </button>
+        <div class="edit-btn-wrapper position-relative">
+            <button class="frutiger-button edit">
+                <div class="inner d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <span class="text">Edit product</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </button>
+            <div class="edit-btns-wrapper overflow-hidden position-absolute top-100 start-0">
+                <div class="edit-btns d-flex flex-column rounded-3 shadow-lg overflow-hidden">
+                    <button class="d-flex align-items-center justify-content-center justify-content-md-start gap-2"
+                        onclick="updateProductName()">
+                        <i class="fa-solid fa-signature"></i>
+                        <span class="d-none d-md-block">
+                            Edit Product Name
+                        </span>
+                    </button>
+                    <button class="d-flex align-items-center justify-content-center justify-content-md-start gap-2"
+                        onclick="updateProductPrice()">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <span class="d-none d-md-block">
+                            Edit Product Price
+                        </span>
+                    </button>
+                    <button class="d-flex align-items-center justify-content-center justify-content-md-start gap-2"
+                        onclick="updateProductQty()">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span class="d-none d-md-block">
+                            Edit Product Qty
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TODO>> Bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
