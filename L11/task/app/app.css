@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+i,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  .container {
+    .left {
+      img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    .right {
+      cursor: pointer;
+
+      &:hover {
+        span {
+          color: crimson;
+        }
+
+        i {
+          color: crimson;
+          transform: scale(1.1) translate(3px, 0);
+        }
+      }
+
+      span {
+        transition: color 0.4s ease;
+      }
+
+      i {
+        font-size: 20px;
+        transition:
+          transform 0.4s ease,
+          color 0.4s ease;
+      }
+    }
+  }
+}
+
+#wallet-control-panel {
+  .container {
+    .app-control-wrapper {
+      .eye-icon-wrapper {
+        width: 22px;
+        height: 20px;
+        transition: opacity 0.4s ease;
+
+        i {
+          position: absolute;
+          cursor: pointer;
+          font-size: 20px;
+          transition: opacity 0.4s ease;
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          &#hiddenBalanceIcon {
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+}
