@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="p-3">
+    <!--TODO>> Show answer system -->
+    <h1>ما هي عاصمة مصر.</h1>
+    <ul>
+        <li>الاسكندرية</li>
+        <li id="a2">القاهره</li>
+        <li>السودان</li>
+    </ul>
+    <button class="btn btn-success" onclick="showAnswer(event)">اظهر الاجابة ✅</button>
+
+    <hr>
+    <!--TODO>> Toggle mode (dark, light) -->
+    <h1 id="text">This is My Website</h1>
+    <button class="btn btn-light border" onclick="toggleMode(event)">🌙 Make dark</button>
+
+    <hr>
+    <!--TODO>> Todo list -->
+    <h1>To Do List</h1>
+    <ul id="todoList" class="d-flex flex-column gap-1">
+        <li class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-between">Go To Work <button
+                onclick="deleteTask(event)" class="btn btn-light btn-sm">❌</button></li>
+        <li class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-between">Go To Gym <button
+                onclick="deleteTask(event)" class="btn btn-light btn-sm">❌</button></li>
+        <li class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-between">Go To Sleep <button
+                onclick="deleteTask(event)" class="btn btn-light btn-sm">❌</button></li>
+    </ul>
+    <div class="d-flex gap-3">
+        <input id="taskNameInput" type="text" class="form-control w-50" placeholder="Task Name">
+        <button onclick="addNewTask()" class="btn btn-success">Add New Task</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

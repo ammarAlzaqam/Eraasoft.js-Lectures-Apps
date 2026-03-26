@@ -1,0 +1,6 @@
+#text {
+  padding: 1rem;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
